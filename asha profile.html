@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #4A5568;
+            --secondary-color: #A0AEC0;
+            --accent-color: #4FD1C5;
+            --background-light: #F9FAFB;
+            --background-dark: #111827;
+            --text-light: #1F2937;
+            --text-dark: #F9FAFB;
+        }
+        .dark {
+            --background-light: #111827;
+            --background-dark: #F9FAFB;
+            --text-light: #F9FAFB;
+            --text-dark: #1F2937;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-light)] text-[var(--text-light)] transition-colors duration-500">
+<div class="relative flex size-full min-h-screen flex-col group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<header class="flex items-center p-4 pb-3 justify-between">
+<button class="flex items-center justify-center size-10 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700">
+<span class="material-symbols-outlined text-gray-600 dark:text-gray-300">arrow_back_ios_new</span>
+</button>
+<h1 class="text-2xl font-bold tracking-tight flex-1 text-center pr-10" style="font-family: 'Playfair Display', serif;">Settings</h1>
+</header>
+<main class="p-6 space-y-10">
+<div class="flex flex-col items-center text-center">
+<div class="relative mb-4">
+<img alt="ASHA Worker Profile Picture" class="w-28 h-28 rounded-full object-cover shadow-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3FYxQ-RSVo37XpF0euTkcyoBa0Y5Q5_Tsjnsjc56sceFz_MZctH0zXx3voL5csQ-26Kx2W0TmW0GIkSh6OP_F8eUaBmE3QN31aU4QSX-pCgVtzdVNYqrDfctLSHA4-1eC5m4o5IjRcMdPHypMwZ6wX-FHBP0v9x5jLZzoTnDCTTcX3Z1toFUZPI0Jerk2Ts8m0XjMfWqoT3JSuX0TRm8mx1c56-0i8abOJaVEpJqMoftgLkbSc6SCT6uw5fjzL7szPmnWXDPnYKg"/>
+<button class="absolute bottom-0 right-0 bg-[var(--accent-color)] h-8 w-8 rounded-full flex items-center justify-center border-2 border-white dark:border-gray-800">
+<span class="material-symbols-outlined text-white text-lg">edit</span>
+</button>
+</div>
+<h2 class="text-xl font-bold text-gray-800 dark:text-white">Priya Sharma</h2>
+<p class="text-sm text-gray-500 dark:text-gray-400">ASHA Worker</p>
+</div>
+<div>
+<h3 class="text-sm font-semibold uppercase text-gray-500 dark:text-gray-400 px-4 pb-2 pt-4">Profile</h3>
+<div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm overflow-hidden">
+<a class="flex items-center gap-4 px-5 py-4 border-b border-gray-100 dark:border-gray-700 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50" href="#">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">account_circle</span>
+<p class="flex-1 truncate text-base font-medium">Edit Profile</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 px-5 py-4 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50" href="#">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">lock</span>
+<p class="flex-1 truncate text-base font-medium">Change Password</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</a>
+</div>
+</div>
+<div>
+<h3 class="text-sm font-semibold uppercase text-gray-500 dark:text-gray-400 px-4 pb-2 pt-4">Preferences</h3>
+<div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm overflow-hidden">
+<a class="flex items-center gap-4 px-5 py-4 border-b border-gray-100 dark:border-gray-700 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50" href="#">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">language</span>
+<p class="flex-1 truncate text-base font-medium">Language</p>
+<div class="flex items-center gap-2">
+<p class="text-gray-500 dark:text-gray-400">English</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</div>
+</a>
+<div class="flex items-center gap-4 px-5 py-4">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">dark_mode</span>
+<p class="flex-1 truncate text-base font-medium">Dark Mode</p>
+<label class="relative flex h-7 w-12 cursor-pointer items-center rounded-full border-none bg-gray-200 dark:bg-gray-700 p-1 has-[:checked]:bg-[var(--accent-color)] transition-colors">
+<div class="h-5 w-5 rounded-full bg-white transition-transform transform translate-x-0 has-[:checked]:translate-x-5" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;"></div>
+<input class="invisible absolute" id="dark-mode-toggle" onclick="document.body.classList.toggle('dark')" type="checkbox"/>
+</label>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-sm font-semibold uppercase text-gray-500 dark:text-gray-400 px-4 pb-2 pt-4">More</h3>
+<div class="bg-white dark:bg-gray-800 rounded-2xl shadow-sm overflow-hidden">
+<a class="flex items-center gap-4 px-5 py-4 border-b border-gray-100 dark:border-gray-700 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50" href="#">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">help_outline</span>
+<p class="flex-1 truncate text-base font-medium">Help &amp; Support</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 px-5 py-4 border-b border-gray-100 dark:border-gray-700 transition-colors hover:bg-gray-50 dark:hover:bg-gray-700/50" href="#">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">info</span>
+<p class="flex-1 truncate text-base font-medium">About App</p>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 px-5 py-4 transition-colors hover:bg-red-50 dark:hover:bg-red-900/20" href="#">
+<span class="material-symbols-outlined text-red-500">logout</span>
+<p class="flex-1 truncate text-base font-medium text-red-500">Logout</p>
+</a>
+</div>
+</div>
+<div class="text-center pt-4">
+<p class="text-xs text-gray-400 dark:text-gray-500">App Version 1.2.3</p>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-white/90 dark:bg-gray-800/90 backdrop-blur-lg border-t border-gray-200/80 dark:border-gray-700/80">
+<nav class="flex justify-around items-center h-20 px-4">
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400 w-1/3" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400 w-1/3" href="#">
+<span class="material-symbols-outlined text-2xl">history</span>
+<p class="text-xs font-medium">History</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-white w-1/3" href="#">
+<div class="bg-[var(--accent-color)] rounded-2xl p-4 -mt-8 shadow-lg shadow-cyan-500/30">
+<span class="material-symbols-outlined text-3xl">account_circle</span>
+</div>
+<p class="text-xs font-bold text-[var(--accent-color)] mt-1">Profile</p>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

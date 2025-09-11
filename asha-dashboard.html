@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;600;700&amp;family=Playfair+Display:wght@700&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');
+      --select-button-svg: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(107, 114, 128)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e');
+    }
+    body {
+      min-height: max(884px, 100dvh);
+      font-family: 'Inter', sans-serif;
+    }
+    .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50 text-gray-800">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<div class="flex items-center bg-white p-4 pb-3 justify-between sticky top-0 z-20 shadow-sm">
+<button class="text-gray-600 flex size-10 shrink-0 items-center justify-center rounded-full bg-transparent hover:bg-gray-100 transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-gray-900 text-xl font-bold leading-tight flex-1 text-center pr-10 font-serif">Report New Case</h1>
+</div>
+<div class="p-5 space-y-8">
+<div class="space-y-6">
+<div>
+<label class="block text-gray-900 text-lg font-semibold leading-tight mb-3" for="disease-select">Disease / Symptom</label>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-gray-800 focus:outline-0 focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50 border-gray-300 bg-white focus:border-teal-500 h-14 bg-[image:--select-button-svg] placeholder:text-gray-400 p-4 text-base font-normal leading-normal appearance-none" id="disease-select">
+<option disabled="" selected="" value="">e.g., Dengue, Malaria</option>
+<option value="diarrhea">Diarrhea</option>
+<option value="typhoid">Typhoid</option>
+<option value="fever">Fever</option>
+<option value="jaundice">Jaundice</option>
+<option value="cholera">Cholera</option>
+<option value="malaria">Malaria</option>
+<option value="dengue">Dengue</option>
+<option value="other">Other</option>
+</select>
+</div>
+<div class="relative">
+<label class="block text-gray-900 text-lg font-semibold leading-tight mb-3" for="citizen-id">Citizen ID</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">badge</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-gray-800 focus:outline-0 focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50 border-gray-300 bg-white focus:border-teal-500 h-14 placeholder:text-gray-400 p-4 pl-12 text-base font-normal leading-normal" id="citizen-id" placeholder="Enter or Scan Citizen's ID number" value=""/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors">
+<span class="material-symbols-outlined">qr_code_scanner</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<label class="block text-gray-900 text-lg font-semibold leading-tight mb-3" for="location">Location</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">location_on</span>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-gray-800 focus:outline-0 focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50 border-gray-300 bg-white focus:border-teal-500 h-14 placeholder:text-gray-400 p-4 pl-12 text-base font-normal leading-normal" id="location" placeholder="e.g., Sector 15, Sonipat" value=""/>
+<button class="absolute right-2 top-1/2 -translate-y-1/2 flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+</div>
+<div class="relative">
+<label class="block text-gray-900 text-lg font-semibold leading-tight mb-3" for="notes">Additional Notes</label>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-gray-800 focus:outline-0 focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50 border-gray-300 bg-white focus:border-teal-500 min-h-[120px] placeholder:text-gray-400 p-4 text-base font-normal leading-normal" id="notes" placeholder="e.g., Patient has a history of..."></textarea>
+</div>
+<div>
+<h2 class="text-gray-900 text-lg font-semibold leading-tight mb-3">Unsafe Water Source</h2>
+<select class="form-select flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-gray-800 focus:outline-0 focus:ring-2 focus:ring-teal-500 focus:ring-opacity-50 border-gray-300 bg-white focus:border-teal-500 h-14 bg-[image:--select-button-svg] placeholder:text-gray-400 p-4 text-base font-normal leading-normal appearance-none">
+<option value="one">💧 Select Water Source</option>
+<option value="two">🚰 Tap</option>
+<option value="three">⛲ Well</option>
+<option value="four">🏞️ Pond</option>
+<option value="five">🔩 Hand Pump</option>
+</select>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-gray-900 text-lg font-semibold leading-tight">Patient Symptoms</h2>
+<button class="flex items-center gap-2 rounded-full bg-teal-100 px-4 py-2 text-sm font-bold text-teal-700 hover:bg-teal-200 transition-colors">
+<span class="material-symbols-outlined">add_circle</span>
+<span>Add Symptom</span>
+</button>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<label class="flex items-center gap-x-3 p-3 rounded-xl bg-white border border-gray-200/80 shadow-sm has-[:checked]:bg-teal-50 has-[:checked]:border-teal-300 transition-colors">
+<input class="h-5 w-5 rounded border-gray-300 bg-gray-100 text-teal-600 checked:bg-teal-600 checked:border-teal-600 checked:bg-[image:--checkbox-tick-svg] focus:ring-2 focus:ring-offset-1 focus:ring-offset-white focus:ring-teal-500 focus:outline-none" type="checkbox"/>
+<p class="text-gray-800 text-sm font-medium leading-normal flex-1">Vomiting</p>
+</label>
+<label class="flex items-center gap-x-3 p-3 rounded-xl bg-white border border-gray-200/80 shadow-sm has-[:checked]:bg-teal-50 has-[:checked]:border-teal-300 transition-colors">
+<input class="h-5 w-5 rounded border-gray-300 bg-gray-100 text-teal-600 checked:bg-teal-600 checked:border-teal-600 checked:bg-[image:--checkbox-tick-svg] focus:ring-2 focus:ring-offset-1 focus:ring-offset-white focus:ring-teal-500 focus:outline-none" type="checkbox"/>
+<p class="text-gray-800 text-sm font-medium leading-normal flex-1">Dehydration</p>
+</label>
+<label class="flex items-center gap-x-3 p-3 rounded-xl bg-white border border-gray-200/80 shadow-sm has-[:checked]:bg-teal-50 has-[:checked]:border-teal-300 transition-colors">
+<input class="h-5 w-5 rounded border-gray-300 bg-gray-100 text-teal-600 checked:bg-teal-600 checked:border-teal-600 checked:bg-[image:--checkbox-tick-svg] focus:ring-2 focus:ring-offset-1 focus:ring-offset-white focus:ring-teal-500 focus:outline-none" type="checkbox"/>
+<p class="text-gray-800 text-sm font-medium leading-normal flex-1">Abdominal Pain</p>
+</label>
+<label class="flex items-center gap-x-3 p-3 rounded-xl bg-white border border-gray-200/80 shadow-sm has-[:checked]:bg-teal-50 has-[:checked]:border-teal-300 transition-colors">
+<input class="h-5 w-5 rounded border-gray-300 bg-gray-100 text-teal-600 checked:bg-teal-600 checked:border-teal-600 checked:bg-[image:--checkbox-tick-svg] focus:ring-2 focus:ring-offset-1 focus:ring-offset-white focus:ring-teal-500 focus:outline-none" type="checkbox"/>
+<p class="text-gray-800 text-sm font-medium leading-normal flex-1">High Fever</p>
+</label>
+<label class="flex items-center gap-x-3 p-3 rounded-xl bg-white border border-gray-200/80 shadow-sm has-[:checked]:bg-teal-50 has-[:checked]:border-teal-300 transition-colors">
+<input class="h-5 w-5 rounded border-gray-300 bg-gray-100 text-teal-600 checked:bg-teal-600 checked:border-teal-600 checked:bg-[image:--checkbox-tick-svg] focus:ring-2 focus:ring-offset-1 focus:ring-offset-white focus:ring-teal-500 focus:outline-none" type="checkbox"/>
+<p class="text-gray-800 text-sm font-medium leading-normal flex-1">Headache</p>
+</label>
+<label class="flex items-center gap-x-3 p-3 rounded-xl bg-white border border-gray-200/80 shadow-sm has-[:checked]:bg-teal-50 has-[:checked]:border-teal-300 transition-colors">
+<input class="h-5 w-5 rounded border-gray-300 bg-gray-100 text-teal-600 checked:bg-teal-600 checked:border-teal-600 checked:bg-[image:--checkbox-tick-svg] focus:ring-2 focus:ring-offset-1 focus:ring-offset-white focus:ring-teal-500 focus:outline-none" type="checkbox"/>
+<p class="text-gray-800 text-sm font-medium leading-normal flex-1">Fatigue</p>
+</label>
+</div>
+</div>
+<div>
+<h2 class="text-gray-900 text-lg font-semibold leading-tight mb-4">Take Photo</h2>
+<button class="flex w-full cursor-pointer flex-col items-center justify-center overflow-hidden rounded-xl h-32 px-4 bg-white text-gray-500 text-base font-medium leading-normal tracking-[0.015em] gap-2 border-2 border-dashed border-gray-300 hover:bg-gray-100 hover:border-gray-400 transition-colors">
+<span class="material-symbols-outlined text-4xl text-teal-600">add_a_photo</span>
+<span class="truncate text-gray-700">Upload Photo of Patient / Area</span>
+</button>
+</div>
+</div>
+</div>
+<div class="sticky bottom-0 bg-white/80 backdrop-blur-sm pb-safe shadow-[0_-2px_10px_rgba(0,0,0,0.05)]">
+<div class="flex gap-3 p-4 justify-between">
+<button class="flex-1 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-5 bg-gray-200 text-gray-800 text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 transition-colors">
+<span class="truncate">Save Draft</span>
+</button>
+<button class="flex-1 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-14 px-5 bg-teal-600 text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-teal-700 transition-colors shadow-lg shadow-teal-500/30 gap-2">
+<span class="material-symbols-outlined">send</span>
+<span class="truncate">Submit</span>
+</button>
+</div>
+<div class="flex gap-2 border-t border-gray-200 px-4 pt-2">
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-teal-600" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">home</span>
+</div>
+<p class="text-teal-600 text-xs font-semibold leading-normal">Home</p>
+</a>
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-gray-500" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">history</span>
+</div>
+<p class="text-gray-500 text-xs font-medium leading-normal">History</p>
+</a>
+<a class="just flex flex-1 flex-col items-center justify-end gap-1 text-gray-500" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<p class="text-gray-500 text-xs font-medium leading-normal">Profile</p>
+</a>
+</div>
+</div>
+</div>
+
+</body></html>
